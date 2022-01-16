@@ -77,6 +77,8 @@ checkPropertyExists("usesShadowedDependencies")
 checkPropertyExists("developmentEnvironmentUserName")
 
 
+modId = modId.replaceAll("\\|", "")
+
 String javaSourceDir = "src/main/java/"
 
 String targetPackageJava = javaSourceDir + modGroup.toString().replaceAll("\\.", "/")
@@ -224,7 +226,7 @@ def mixinSrg = "${tasks.reobf.temporaryDir}" + File.separator + "mixins.srg"
 
 task generateAssets {
     if (usesMixins.toBoolean()) {
-        getFile("/src/main/resources/mixins." + modId.replaceAll("\\|", "") + ".json").text = """{
+        getFile("/src/main/resources/mixins." + modId + ".json").text = """{
   "required": true,
   "minVersion": "0.7.11",
   "package": "${modGroup}.${mixinsPackage}",
