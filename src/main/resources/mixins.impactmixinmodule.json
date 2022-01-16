@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.7.11",
+  "package": "space.gtimpact.mixinmodule.mixins",
+  "plugin": "space.gtimpact.mixinmodule.mixinplugin.MixinPlugin",
+  "refmap": "mixins.impactmixinmodule.refmap.json",
+  "target": "@env(DEFAULT)",
+  "compatibilityLevel": "JAVA_8"
+}
+
