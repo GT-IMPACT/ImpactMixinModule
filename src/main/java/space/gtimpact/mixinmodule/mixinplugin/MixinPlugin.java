@@ -3,7 +3,6 @@ package space.gtimpact.mixinmodule.mixinplugin;
 import net.minecraft.launchwrapper.Launch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.spongepowered.asm.lib.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import ru.timeconqueror.spongemixins.MinecraftURLClassPath;
@@ -18,9 +17,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static space.gtimpact.mixinmodule.Main.MODID;
-import static space.gtimpact.mixinmodule.mixinplugin.TargetedMod.*;
 import static java.nio.file.Files.walk;
+import static space.gtimpact.mixinmodule.Main.MODID;
+import static space.gtimpact.mixinmodule.mixinplugin.TargetedMod.VANILLA;
 
 public class MixinPlugin implements IMixinConfigPlugin {
 	
@@ -68,15 +67,23 @@ public class MixinPlugin implements IMixinConfigPlugin {
 		return mixins;
 	}
 	
+	@Override
+	public void preApply(String s, org.spongepowered.libraries.org.objectweb.asm.tree.ClassNode classNode, String s1, IMixinInfo iMixinInfo) {
+	}
+	
+	@Override
+	public void postApply(String s, org.spongepowered.libraries.org.objectweb.asm.tree.ClassNode classNode, String s1, IMixinInfo iMixinInfo) {
+	}
+	
 	private boolean loadJarOf(final TargetedMod mod) {
 		try {
 			File jar = findJarOf(mod);
-			if(jar == null) {
+			if (jar == null) {
 				LOG.info("Jar not found for " + mod);
 				return false;
 			}
 			LOG.info("Attempting to add " + jar + " to the URL Class Path");
-			if(!jar.exists()) {
+			if (!jar.exists()) {
 				throw new FileNotFoundException(jar.toString());
 			}
 			MinecraftURLClassPath.addJar(jar);
@@ -96,13 +103,5 @@ public class MixinPlugin implements IMixinConfigPlugin {
 			e.printStackTrace();
 			return null;
 		}
-	}
-	
-	@Override
-	public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
-	}
-	
-	@Override
-	public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
 	}
 }
