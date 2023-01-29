@@ -7,13 +7,13 @@ import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(ItemArmorEnergypack.class)
 public abstract class ArmorEnergyPack_Mixin extends ItemArmorElectric {
-	
-	public ArmorEnergyPack_Mixin() {
-		super(null, null, 0, 0, 0, 0);
-	}
-	
-	@Override
-	public double getMaxCharge(ItemStack itemStack) {
-		return 1E7D;
-	}
+
+    public ArmorEnergyPack_Mixin() {
+        super(null, null, 0, 0, 0, 0);
+    }
+
+    @Override
+    public double getMaxCharge(ItemStack itemStack) {
+        return 1E7D;
+    }
 }

@@ -9,12 +9,12 @@ import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(NEIIC2Config.class)
 public abstract class NeiConfig_Mixin implements IConfigureNEI {
-	
-	@Override
-	public void loadConfig() {
-		API.registerRecipeHandler(new AdvRecipeHandler());
-		API.registerUsageHandler(new AdvRecipeHandler());
-		API.registerRecipeHandler(new AdvShapelessRecipeHandler());
-		API.registerUsageHandler(new AdvShapelessRecipeHandler());
-	}
+
+    @Override
+    public void loadConfig() {
+        API.registerRecipeHandler(new AdvRecipeHandler());
+        API.registerUsageHandler(new AdvRecipeHandler());
+        API.registerRecipeHandler(new AdvShapelessRecipeHandler());
+        API.registerUsageHandler(new AdvShapelessRecipeHandler());
+    }
 }

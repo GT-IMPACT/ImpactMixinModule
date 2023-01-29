@@ -8,17 +8,17 @@ import org.spongepowered.asm.mixin.Shadow;
 
 @Mixin(ItemToolPainter.class)
 public abstract class ToolPainter_Mixin extends ItemIC2 {
-	
-	@Final
-	@Shadow(remap = false)
-	public int color;
-	
-	public ToolPainter_Mixin() {
-		super(null);
-	}
-	
-	@Override
-	public int getMaxDamage() {
-		return 99;
-	}
+
+    @Final
+    @Shadow(remap = false)
+    public int color;
+
+    public ToolPainter_Mixin() {
+        super(null);
+    }
+
+    @Override
+    public int getMaxDamage() {
+        return 99;
+    }
 }
