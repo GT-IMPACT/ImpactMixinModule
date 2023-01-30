@@ -29,6 +29,7 @@ public enum Mixin {
     ArmorAdvBatPack_Mixin("ic2.ArmorAdvBatPack_Mixin", IC2),
     ArmorBatPack_Mixin("ic2.ArmorBatPack_Mixin", IC2),
     NeiConfig_Mixin("ic2.NeiConfig_Mixin", IC2),
+    ItemIC2FluidContainer_Mixin("ic2.ItemIC2FluidContainer_Mixin", IC2),
 
     MovableTileRegistry_Mixin("ae2.MovableTileRegistry_Mixin", AE, GREGTECH, VANILLA),
 
