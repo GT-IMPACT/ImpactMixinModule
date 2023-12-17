@@ -17,6 +17,7 @@ public enum TargetedMod {
     GREGTECH("GregTech", "gregtech", true),
     IC2("IndustrialCraft 2", "industrialcraft", true),
     AE("Applied Energistics 2", "appliedenergistics2", true),
+    AE2FC("Fluid Craft For AE2", "ae2fc", true),
     COFH("CoFHCore", "CoFHCore", true),
     ;
 

@@ -32,6 +32,7 @@ public enum Mixin {
     ItemIC2FluidContainer_Mixin("ic2.ItemIC2FluidContainer_Mixin", IC2),
 
     MovableTileRegistry_Mixin("ae2.MovableTileRegistry_Mixin", AE, GREGTECH, VANILLA),
+    AEFC_GT_Fix_Mixin("ae2.MovableTileRegistry_Mixin", AE2FC, AE, GREGTECH, VANILLA),
 
     ForgeHooksClient_Mixin("vanilla.ForgeHooksClient_Mixin", VANILLA),
     BlockHopper_Mixin("vanilla.BlockHopper_Mixin", VANILLA),
