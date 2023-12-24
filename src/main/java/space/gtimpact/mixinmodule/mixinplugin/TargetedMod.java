@@ -19,6 +19,8 @@ public enum TargetedMod {
     AE("Applied Energistics 2", "appliedenergistics2", true),
     AE2FC("Fluid Craft For AE2", "ae2fc", true),
     COFH("CoFHCore", "CoFHCore", true),
+    EC2("Extra Cells 2", "extracells", true),
+    EI("Ender IO", "EnderIO", true),
     ;
 
     public final String modName;

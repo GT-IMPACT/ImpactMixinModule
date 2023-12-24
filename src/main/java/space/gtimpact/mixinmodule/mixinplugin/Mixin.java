@@ -39,7 +39,9 @@ public enum Mixin {
 
     OreDictionaryArbiter_Mixin("cofh.OreDictionaryArbiter_Mixin", COFH, VANILLA),
     CoFHCoreUpdate_Mixin_Mixin("cofh.CoFHCoreUpdate_Mixin", COFH, VANILLA),
+    AbstractLiquidConduit_Mixin("ei.AbstractLiquidConduit_Mixin", EI, GREGTECH, VANILLA),
     ;
+
     public final String mixinClass;
     public final List<TargetedMod> targetedMods;
     private final Side side;
