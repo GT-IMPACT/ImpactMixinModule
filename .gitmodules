@@ -1,0 +1,4 @@
+[submodule "buildconfig"]
+	path = remote-build-logic
+	url = https://github.com/GT-IMPACT/BuildConfig.git
+	branch = main

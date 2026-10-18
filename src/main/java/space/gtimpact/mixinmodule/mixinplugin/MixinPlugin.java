@@ -68,14 +68,14 @@ public class MixinPlugin implements IMixinConfigPlugin {
     @Override
     public void preApply(
             String s,
-            org.spongepowered.libraries.org.objectweb.asm.tree.ClassNode classNode,
+            org.spongepowered.asm.lib.tree.ClassNode classNode,
             String s1,
             IMixinInfo iMixinInfo) {}
 
     @Override
     public void postApply(
             String s,
-            org.spongepowered.libraries.org.objectweb.asm.tree.ClassNode classNode,
+            org.spongepowered.asm.lib.tree.ClassNode classNode,
             String s1,
             IMixinInfo iMixinInfo) {}
 
