@@ -40,6 +40,7 @@ public enum Mixin {
     OreDictionaryArbiter_Mixin("cofh.OreDictionaryArbiter_Mixin", COFH, VANILLA),
     CoFHCoreUpdate_Mixin_Mixin("cofh.CoFHCoreUpdate_Mixin", COFH, VANILLA),
     AbstractLiquidConduit_Mixin("ei.AbstractLiquidConduit_Mixin", EI, GREGTECH, VANILLA),
+    PowerBlock_Mixin("sgcraft.PowerBlock_Mixin", SGCRAFT),
     ;
 
     public final String mixinClass;

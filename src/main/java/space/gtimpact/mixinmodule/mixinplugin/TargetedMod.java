@@ -21,6 +21,7 @@ public enum TargetedMod {
     COFH("CoFHCore", "CoFHCore", true),
     EC2("Extra Cells 2", "extracells", true),
     EI("Ender IO", "EnderIO", true),
+    SGCRAFT("SGCraft", "SGCraft", false),
     ;
 
     public final String modName;

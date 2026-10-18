@@ -27,5 +27,9 @@ dependencies {
     implementation("curse.maven:cofh-core-69162:2388751")
     implementation(fileTree("libs") {
         include("*.jar")
+        exclude("SGCraft-*.jar")
     })
+    implementation(modUtils.deobfuscate(fileTree("libs") {
+        include("SGCraft-*.jar")
+    }))
 }
