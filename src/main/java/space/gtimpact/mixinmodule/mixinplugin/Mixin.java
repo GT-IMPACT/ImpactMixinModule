@@ -31,15 +31,11 @@ public enum Mixin {
     NeiConfig_Mixin("ic2.NeiConfig_Mixin", IC2),
     ItemIC2FluidContainer_Mixin("ic2.ItemIC2FluidContainer_Mixin", IC2),
 
-    MovableTileRegistry_Mixin("ae2.MovableTileRegistry_Mixin", AE, GREGTECH, VANILLA),
-    AEFC_GT_Fix_Mixin("ae2.AEFC_GT_Fix_Mixin", AE2FC, AE, GREGTECH, VANILLA),
-
     ForgeHooksClient_Mixin("vanilla.ForgeHooksClient_Mixin", VANILLA),
     BlockHopper_Mixin("vanilla.BlockHopper_Mixin", VANILLA),
 
     OreDictionaryArbiter_Mixin("cofh.OreDictionaryArbiter_Mixin", COFH, VANILLA),
     CoFHCoreUpdate_Mixin_Mixin("cofh.CoFHCoreUpdate_Mixin", COFH, VANILLA),
-    AbstractLiquidConduit_Mixin("ei.AbstractLiquidConduit_Mixin", EI, GREGTECH, VANILLA),
     PowerBlock_Mixin("sgcraft.PowerBlock_Mixin", SGCRAFT),
     ;
 
