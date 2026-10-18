@@ -24,8 +24,6 @@ buildConfig {
 
 dependencies {
     implementation("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
-    api("com.github.GTNewHorizons:EnderCore:0.3.0:dev")
-    implementation("com.github.GTNewHorizons:EnderIO:2.4.16:dev")
     implementation("curse.maven:cofh-core-69162:2388751")
     implementation(fileTree("libs") {
         include("*.jar")
