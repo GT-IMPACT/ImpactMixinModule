@@ -35,4 +35,4 @@ is tracked in `src/main/resources/mixins.impact_mixinmodule.json`; the build gen
 its refmap and the Java `BuildConfig` constants.
 
 Publishing uses the IMPACT releases Maven repository. Set `IMPACT_MAVEN_USER` and
-`IMPACT_MAVEN_PASSWORD` for `./gradlew publish` and the release workflow.
+`IMPACT_MAVEN_PASSWORD` for `./gradlew publish`.
